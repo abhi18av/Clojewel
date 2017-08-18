@@ -41,7 +41,7 @@
 
                             ;; Typed clojure
                             ;; TODO Creates an issue with cider's nrepl - probably transitive dependency
-                            ;[org.clojure/core.typed "0.4.0"]
+                            ;[org.clojure/core.typed "0.4.0" :exclusions [com.cemerick/piggieback]]
 
                             ;; TODO Middleware - might help to mitigate the cider error caused by core.typed
                             ;[org.clojure/tools.nrepl "0.2.12" :scope "test"]
@@ -103,6 +103,10 @@
 
   :plugins [[lein-cljsbuild "1.1.6"]
             [lein-environ "1.1.0"]]
+
+ ; :injections [(require 'clojure.core.typed)
+ ;              (clojure.core.typed/install)]
+
 
   :min-lein-version "2.6.1"
 
