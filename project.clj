@@ -80,8 +80,8 @@
                             ;; Shell library
                             [me.raynes/conch "0.8.0"]
 
-
-
+                            ;; Takes care of logging
+                            [onelog "0.5.0" :exclusions [org.slf4j/slf4j-log4j12]]
 
 
 
