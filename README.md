@@ -1,5 +1,8 @@
 # clojewel
 
+```sh
+lein new chestnut clojewel +coc +reagent +garden +http-kit
+```
 
 ## Development
 
