@@ -2,6 +2,9 @@
 
 ```sh
 lein new chestnut clojewel +coc +reagent +garden +http-kit
+
+open -a Safari http://0.0.0.0:10555
+
 ```
 
 ## Development
