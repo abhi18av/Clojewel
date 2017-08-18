@@ -14,7 +14,7 @@
 
                             ;;; EXPERIMENTS
 
-                            ;[instaparse "1.4.7"]
+                            [instaparse "1.4.7"]
 
                             ;[org.bytedeco.javacpp-presets/llvm-platform "4.0.0-1.3"]
 
@@ -28,14 +28,14 @@
 
 
                             ;; Matrix stuff
-                            ;[net.mikera/core.matrix "0.60.3"]
-                            ;[net.mikera/vectorz-clj "0.47.0"]
+                            [net.mikera/core.matrix "0.60.3"]
+                            [net.mikera/vectorz-clj "0.47.0"]
 
                             ;; Asynchronous stuff
-                            ;[org.clojure/core.async "0.3.443"]
+                            [org.clojure/core.async "0.3.443"]
 
                             ;; Pattern matching in clojure
-                            ;[org.clojure/core.match "0.3.0-alpha5"]
+                            [org.clojure/core.match "0.3.0-alpha5"]
 
 
 
@@ -47,38 +47,38 @@
                             ;[org.clojure/tools.nrepl "0.2.12" :scope "test"]
 
                             ; Quickcheck
-                            ;[org.clojure/test.check "0.10.0-alpha2"]
+                            [org.clojure/test.check "0.10.0-alpha2"]
 
                             ;; MiniKanren
-                            ;[org.clojure/core.logic "0.8.11"]
+                            [org.clojure/core.logic "0.8.11"]
 
                             ;; Clojure reader in clojure
-                            ;[org.clojure/tools.reader "1.0.5"]
+                            [org.clojure/tools.reader "1.0.5"]
 
                             ;; CLI functionality for clojure
-                            ;[org.clojure/tools.cli "0.3.5"]
+                            [org.clojure/tools.cli "0.3.5"]
 
-                            ;; Namespace resolution functionality in clojure
+                            ;; Namespace resolution functionality in clojure - included below already
                             ;[org.clojure/tools.namespace "0.2.11"]
 
                             ;; Clojure AST to EDn
-                            ;[org.clojure/tools.analyzer "0.6.9"]
+                            [org.clojure/tools.analyzer "0.6.9"]
 
 
                             ;; Combinatorics library
-                            ;[org.clojure/math.combinatorics "0.1.4"]
+                            [org.clojure/math.combinatorics "0.1.4"]
 
                             ;; Dependency resolution
-                            ;[org.clojure/tools.deps.alpha "0.1.29"]
+                            [org.clojure/tools.deps.alpha "0.1.29"]
 
                             ;; Documentation using marginalia
-                            ;[it.frbracch/boot-marginalia "0.1.3-1"]
-
+                            [lein-marginalia "0.9.0"]
+                            
                             ;; Boot documenataion tool Codox
-                            ;[boot-codox "0.10.3" :scope "test"]
+                            [lein-codox "0.10.3"]
 
                             ;; Shell library
-                            ;[me.raynes/conch "0.8.0"]
+                            [me.raynes/conch "0.8.0"]
 
 
 
