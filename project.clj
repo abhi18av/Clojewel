@@ -6,11 +6,6 @@
 
   :dependencies [
 
-                 ;; Frozen clojure version
-                 [org.clojure/clojure "1.9.0-alpha17"]
-
-                 ;; Frozen Clojurescript version
-                 [org.clojure/clojurescript "1.9.854" :scope "provided"]
 
                             ;;;; EXPERIMENTS
 
@@ -19,6 +14,14 @@
                             ;[org.bytedeco.javacpp-presets/llvm-platform "4.0.0-1.3"]
                             ;;;;
 
+
+
+
+                            ;; Frozen clojure version
+                           [org.clojure/clojure "1.9.0-alpha17"]
+
+                            ;; Frozen Clojurescript version
+                           [org.clojure/clojurescript "1.9.854" :scope "provided"]
 
                             ;;; IMPORTANT STUFF
                             ;[adzerk/boot-cljs "2.1.1" :scope "test"]
