@@ -225,7 +225,7 @@
         (:return, :u)
       )),
     (:line, 62, :none),
-    (:const, (:(=), :?, :union)),
+    (:const, (:(=), :∪, :union)),
     (:line, 63, :none),
     (:(=), (:call, :union!, (:(::), :s, :Set), :xs), (:block,
         (:line, 63, :none),
@@ -289,7 +289,7 @@
         (:return, :i)
       )),
     (:line, 83, :none),
-    (:const, (:(=), :?, :intersect)),
+    (:const, (:(=), :∩, :intersect)),
     (:line, 85, :none),
     (:function, (:call, :setdiff, (:(::), :a, :Set), (:(::), :b, :Set)), (:block,
         (:line, 86, :none),
@@ -345,29 +345,29 @@
         (:return, true)
       )),
     (:line, 108, :none),
-    (:const, (:(=), :?, :issubset)),
+    (:const, (:(=), :⊆, :issubset)),
     (:line, 109, :none),
-    (:(=), (:call, :?, (:(::), :l, :Set), (:(::), :r, :Set)), (:block,
+    (:(=), (:call, :⊊, (:(::), :l, :Set), (:(::), :r, :Set)), (:block,
         (:line, 109, :none),
         (:call, :<, :l, :r)
       )),
     (:line, 110, :none),
-    (:(=), (:call, :?, (:(::), :l, :Set), (:(::), :r, :Set)), (:block,
+    (:(=), (:call, :⊈, (:(::), :l, :Set), (:(::), :r, :Set)), (:block,
         (:line, 110, :none),
-        (:call, :!, (:call, :?, :l, :r))
+        (:call, :!, (:call, :⊆, :l, :r))
       )),
     (:line, 111, :none),
-    (:(=), (:call, :?, :l, :r), (:block,
+    (:(=), (:call, :⊇, :l, :r), (:block,
         (:line, 111, :none),
         (:call, :issubset, :r, :l)
       )),
     (:line, 112, :none),
-    (:(=), (:call, :?, (:(::), :l, :Set), (:(::), :r, :Set)), (:block,
+    (:(=), (:call, :⊉, (:(::), :l, :Set), (:(::), :r, :Set)), (:block,
         (:line, 112, :none),
-        (:call, :!, (:call, :?, :l, :r))
+        (:call, :!, (:call, :⊇, :l, :r))
       )),
     (:line, 113, :none),
-    (:(=), (:call, :?, (:(::), :l, :Set), (:(::), :r, :Set)), (:block,
+    (:(=), (:call, :⊋, (:(::), :l, :Set), (:(::), :r, :Set)), (:block,
         (:line, 113, :none),
         (:call, :<, :r, :l)
       )),
@@ -530,7 +530,7 @@
         (:line, 249, :none),
         (:for, (:(=), :x, :s), (:block,
             (:line, 250, :none),
-            (:?=, :h, (:call, :hash, :x))
+            (:⊻=, :h, (:call, :hash, :x))
           )),
         (:line, 252, :none),
         (:return, :h)
