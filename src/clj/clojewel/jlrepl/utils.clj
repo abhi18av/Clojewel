@@ -1,4 +1,4 @@
-(ns clojewel.utils
+(ns clojewel.jlrepl.utils
   (:gen-class))
 
 (use '[me.raynes.conch :refer [programs with-programs let-programs] :as sh])

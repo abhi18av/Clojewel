@@ -1,6 +1,6 @@
-(ns clojewel.core
-  (:require [clojewel.jlrepl :as jlrepl]
-            [clojewel.utils :as utils])
+(ns clojewel.jlrepl.core
+  (:require [clojewel.jlrepl.jlrepl :as jlrepl]
+            [clojewel.jlrepl.utils :as utils])
   (:gen-class))
 
 ;; SCRATCH related work
