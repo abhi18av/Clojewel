@@ -64,15 +64,16 @@
                             ;; Namespace resolution functionality in clojure - included below already
                             ;[org.clojure/tools.namespace "0.2.11"]
 
-                            ;; Clojure AST to EDn
+                            ;; Clojure AST to EDN
                             [org.clojure/tools.analyzer "0.6.9"]
+
+                            ;; Dependency resolution
+                            [org.clojure/tools.deps.alpha "0.1.29"]
+
 
 
                             ;; Combinatorics library
                             [org.clojure/math.combinatorics "0.1.4"]
-
-                            ;; Dependency resolution
-                            [org.clojure/tools.deps.alpha "0.1.29"]
 
                             ;; Documentation using marginalia
                             [lein-marginalia "0.9.0"]
