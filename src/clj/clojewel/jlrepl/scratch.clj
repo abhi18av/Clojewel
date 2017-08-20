@@ -1,6 +1,6 @@
 ;; TODO:  start with macros that transform the clojure expression to a julia expression
 
-(ns boot.user)
+(ns user)
 (require '[clojure.tools.analyzer :as ana])
 (require '[clojure.tools.analyzer.env :as env])
 (require '[clojure.tools.analyzer.ast :as ast])
