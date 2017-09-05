@@ -12,13 +12,18 @@
   (with-programs [julia]
   (julia "-e" julia-expression)))
 
+
+;(julia-eval-cli "1 + 1 |> show")
+
+
+
 (defn julia-eval-file [julia-file-name]
   (with-programs [julia]
   (julia julia-file-name)))
 
 
 ; EXAMPLE
-;(clojewel.utils/julia-eval-file-with-driver "./src/clojewel/file_to_jlir.jl" "./src/clojewel/scratch.jl" "./src/clojewel/scratch.jlir")
+;(clojewel.jlrepl.utils/julia-eval-file-with-driver "./src/clojewel/file_to_jlir.jl" "./src/clojewel/scratch.jl" "./src/clojewel/scratch.jlir")
 (defn julia-eval-file-with-driver
   "This function executes the cli of the form => julia driver.jl source.jl output.jl"
   [driver-file source-file output-file]
@@ -26,13 +31,15 @@
   (julia driver-file source-file {:out (java.io.File. output-file)})))
 
 ; EXAMPLE
-;(clojewel.utils/julia-eval-file-with-driver "./src/clojewel/eval_expr.jl" julia-expression)
+;(clojewel.jlrepl.utils/julia-eval-file-with-driver "./src/clojewel/eval_expr.jl" julia-expression)
 (defn julia-eval-expr-with-driver
   "This function executes the cli of the form => julia driver.jl source.jl output.jl"
   [driver-file julia-expression]
   (with-programs [julia]
   (julia driver-file julia-expression)))
 
+
+(clojewel.jlrepl.utils/julia-eval-file-with-driver "./src/clojewel/eval_expr.jl" "1 + 1")
 
 
 (defn shell-save-to-file [file-name julia-expression]
